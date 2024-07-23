@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Neon - Página de Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Agrega estilos personalizados aquí si es necesario */
+        /* Ejemplo: .custom-style { color: red; } */
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Encabezado -->
+    <header class="bg-gradient-to-r from-pink-500 to-purple-500 p-6 text-center">
+        <h1 class="text-4xl font-extrabold">DJ Neon</h1>
+        <p class="text-lg">¡Experimenta la magia de la música con colores neon!</p>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section class="p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">Sobre Mí</h2>
+        <p class="text-gray-300">Soy DJ Neon, un apasionado por la música electrónica que transforma cada evento en una experiencia única. Mi estilo único y los vibrantes colores neon te llevarán a un viaje inolvidable.</p>
+    </section>
+
+    <!-- Sección de Eventos -->
+    <section class="bg-purple-800 p-8 text-center">
+        <h2 class="text-2xl font-bold text-yellow-300 mb-4">Próximos Eventos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Agrega detalles de los eventos aquí -->
+            <div class="bg-purple-600 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Fiesta Neon 2024</h3>
+                <p class="text-gray-300">Fecha: 15 de marzo<br>Hora: 8:00 PM</p>
+            </div>
+            <!-- Más eventos... -->
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-gradient-to-r from-purple-500 to-pink-500 p-4 text-center">
+        <p class="text-sm">&copy; 2024 DJ Neon. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Animación con JavaScript (Ejemplo: Rotación) -->
+    <script>
+        const header = document.querySelector('header');
+
+        function rotateHeader() {
+            header.classList.add('rotate-scale-up');
+            setTimeout(() => {
+                header.classList.remove('rotate-scale-up');
+            }, 1000);
+        }
+
+        // Llama a la función de animación después de cargar la página
+        window.onload = rotateHeader;
+    </script>
+</body>
+</html>
